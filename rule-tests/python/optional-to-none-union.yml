@@ -1,0 +1,5 @@
+id: optional-to-none-union
+valid:
+  - "def a(arg: int | None): pass"
+invalid:
+  - "def a(arg: Optional[int]): pass"

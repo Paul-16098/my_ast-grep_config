@@ -1,0 +1,8 @@
+{
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/ast-grep/ast-grep/main/schemas/rule.json": [
+      "file:///c%3A/Users/p/.ast-grep/rules/**/*.yml"
+    ],
+    "https://github.com/ast-grep/ast-grep/raw/refs/heads/main/schemas/project.json": "sgconfig.yml"
+  }
+}

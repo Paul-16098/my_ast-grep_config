@@ -1,0 +1,9 @@
+id: prefer-generator-expressions
+language: python
+rule:
+  pattern: $LIST
+  kind: list_comprehension
+transform:
+  INNER:
+    substring: { source: $LIST, startChar: 1, endChar: -1 }
+fix: ($INNER)

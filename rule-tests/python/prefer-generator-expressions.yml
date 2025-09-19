@@ -1,0 +1,7 @@
+id: prefer-generator-expressions
+valid:
+  - (a for a in b)
+  - (x for x in range(10))
+invalid:
+  - "[a for a in b]"
+  - "[x for x in range(10)]"

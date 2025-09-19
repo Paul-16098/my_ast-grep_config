@@ -1,0 +1,20 @@
+id: avoid-duplicate-export
+snapshots:
+  pub mod foo;pub use foo::Foo;:
+    labels:
+    - source: pub use foo::Foo;
+      style: primary
+      start: 12
+      end: 29
+    - source: pub mod foo;
+      style: secondary
+      start: 0
+      end: 12
+    - source: pub mod foo;pub use foo::Foo;
+      style: secondary
+      start: 0
+      end: 29
+    - source: foo
+      style: secondary
+      start: 20
+      end: 23

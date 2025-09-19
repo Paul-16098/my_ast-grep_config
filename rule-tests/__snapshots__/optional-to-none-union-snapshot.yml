@@ -1,0 +1,9 @@
+id: optional-to-none-union
+snapshots:
+  'def a(arg: Optional[int]): pass':
+    fixed: 'def a(arg: int | None): pass'
+    labels:
+    - source: Optional[int]
+      style: primary
+      start: 11
+      end: 24

@@ -1,0 +1,21 @@
+id: use-walrus-operator
+language: python
+rule:
+  follows:
+    pattern:
+      context: $VAR = $$$EXPR
+      selector: expression_statement
+  pattern: "if $VAR: $$$B"
+fix: |-
+  if $VAR := $$$EXPR:
+    $$$B
+---
+id: remove-declaration
+language: python
+rule:
+  pattern:
+    context: $VAR = $$$EXPR
+    selector: expression_statement
+  precedes:
+    pattern: "if $VAR: $$$B"
+fix: ""

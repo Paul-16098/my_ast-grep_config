@@ -1,0 +1,5 @@
+id: no-await-in-promise-all
+valid:
+  - Promise.all([a(),b()])
+invalid:
+  - Promise.all([await a(),b()])

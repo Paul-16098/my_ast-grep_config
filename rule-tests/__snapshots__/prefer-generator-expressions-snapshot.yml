@@ -1,0 +1,16 @@
+id: prefer-generator-expressions
+snapshots:
+  '[a for a in b]':
+    fixed: (a for a in b)
+    labels:
+    - source: '[a for a in b]'
+      style: primary
+      start: 0
+      end: 14
+  '[x for x in range(10)]':
+    fixed: (x for x in range(10))
+    labels:
+    - source: '[x for x in range(10)]'
+      style: primary
+      start: 0
+      end: 22
