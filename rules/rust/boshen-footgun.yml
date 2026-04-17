@@ -1,0 +1,5 @@
+id: boshen-footgun
+language: rs
+rule:
+  pattern: $A.chars().enumerate()
+fix: $A.char_indices()

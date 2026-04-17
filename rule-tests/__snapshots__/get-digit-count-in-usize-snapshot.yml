@@ -1,0 +1,9 @@
+id: get-digit-count-in-usize
+snapshots:
+  let width = (lines + num).to_string().chars().count();:
+    fixed: let width = (lines + num).to_string().chars().count();
+    labels:
+    - source: (lines + num).to_string().chars().count()
+      style: primary
+      start: 12
+      end: 53

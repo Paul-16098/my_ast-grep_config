@@ -1,0 +1,5 @@
+id: use-logical-assignment
+language: ts
+rule:
+  pattern: $A = $A || $B
+fix: $A ||= $B

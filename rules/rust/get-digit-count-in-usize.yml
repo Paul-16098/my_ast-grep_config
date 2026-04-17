@@ -1,0 +1,5 @@
+id: get-digit-count-in-usize
+language: rust
+rule:
+  pattern: $NUM.to_string().chars().count()
+fix: $NUM.to_string().chars().count()

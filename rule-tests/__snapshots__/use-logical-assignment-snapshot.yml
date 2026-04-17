@@ -1,0 +1,9 @@
+id: use-logical-assignment
+snapshots:
+  a.title = a.title || 'title is empty.';:
+    fixed: a.title ||= 'title is empty.';
+    labels:
+    - source: a.title = a.title || 'title is empty.'
+      style: primary
+      start: 0
+      end: 38

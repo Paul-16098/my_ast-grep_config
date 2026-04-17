@@ -1,0 +1,3 @@
+id: boshen-footgun
+invalid:
+  - for (i, char) in source.chars().enumerate() {println!("Boshen is angry :)");}

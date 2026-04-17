@@ -1,0 +1,3 @@
+id: get-digit-count-in-usize
+invalid:
+  - let width = (lines + num).to_string().chars().count();

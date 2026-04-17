@@ -1,0 +1,9 @@
+id: boshen-footgun
+snapshots:
+  for (i, char) in source.chars().enumerate() {println!("Boshen is angry :)");}:
+    fixed: for (i, char) in source.char_indices() {println!("Boshen is angry :)");}
+    labels:
+    - source: source.chars().enumerate()
+      style: primary
+      start: 17
+      end: 43

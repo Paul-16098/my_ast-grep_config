@@ -1,0 +1,3 @@
+id: use-logical-assignment
+invalid:
+  - a.title = a.title || 'title is empty.';
